@@ -1,14 +1,23 @@
-# Huffman File Compression (ZIP) — DAA Mini Project
+# Huffman File Compression
 
-Algorithms: Huffman Coding (greedy), DFS (tree traversal for codes), Merge Sort (frequency display).
+A Python-based desktop application for **lossless file compression and decompression** using Huffman Coding. This DAA project demonstrates the practical implementation of **Huffman Greedy Encoding, Merge Sort, and Depth-First Search (DFS)** through a simple Tkinter GUI.
 
-## Run
-`python main.py` (Python 3, Tkinter included with most installations).
+### Key Features
+- Lossless file compression using Huffman Coding
+- File decompression and original data restoration
+- Byte frequency analysis
+- Huffman code generation using DFS
+- Frequency sorting using Merge Sort
+- Compression ratio and space-saving calculation
+- Simple graphical interface using Tkinter
+- ZIP-based storage for compressed data
 
-## Compress
-Browse any file, click **Compress**, and save a `.zip` archive. The ZIP contains `compressed.hfc` (actual Huffman-coded data) and `metadata.json` (original filename). This is a valid ZIP archive and can be opened by ZIP tools, but the `.hfc` member needs this project to decode.
+### Algorithms Used
+- **Huffman Coding** — Greedy algorithm for lossless compression
+- **Merge Sort** — Sorts byte frequencies in descending order
+- **DFS** — Traverses the Huffman tree to generate binary codes
 
-## Decompress
-Browse a `.zip` created by this application, click **Decompress**, and choose where to save the restored original file. Other ordinary ZIP archives are not supported for Huffman decompression.
+### Technologies
+**Python • Tkinter • Huffman Coding • Merge Sort • DFS • ZIP**
 
-**Note:** ZIP container overhead may increase file size for small files or already compressed data.
+This project was developed as a **Design and Analysis of Algorithms (DAA) Mini Project** to demonstrate how theoretical algorithms can be applied to a practical file compression system.
